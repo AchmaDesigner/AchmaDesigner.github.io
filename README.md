@@ -1,1 +1,9 @@
-"# Achmadesigner.github.io" 
+```javascript
+
+function
+salam()
+{
+    return "Assalamualaykum"
+}
+
+```
