@@ -7,19 +7,22 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style type="text/css">
         body{
-            background-color: #212025;
+            background-color: rgba(32, 31, 36, 1);
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
             font-family: 'Nunito', sans-serif;
-            color: #fff;
             line-height: 1.5;
+            color:#fff;
         }
         a:active, a:hover {
             outline: 0;
         }
         .nav>li>a {
             font-family: 'Source Sans Pro',Arial,sans-serif;
-            color:grey;
+            color:#fff;
             font-weight: 20;
-            /*text-transform: uppercase;*/
             padding: 5px 30px;
         }
         .nav>li>a:hover:after {
@@ -29,7 +32,7 @@
           bottom: 0;
           width: 40px;
           margin: 20px 0 0 -20px;
-          border-bottom: 1px solid magenta;
+          border-bottom: 1px solid #003fab;
         }
         .nav>li.active>a:after {
           content: "";
@@ -38,7 +41,7 @@
           bottom: 0;
           width: 40px;
           margin: 20px 0 0 -20px;
-          border-bottom: 1px solid magenta;
+          border-bottom: 1px solid #003fab;
         }
         .nav>li>a:hover{
             background-color: transparent;
@@ -74,8 +77,43 @@
           letter-spacing: 6px;
           color:#fff;
          }
+         .panel{
+          border-radius: 0px;
+          border:none;
+          background: #082157;
+         }
+         .cover{
+          background: 
+            linear-gradient(
+                to top right,
+                rgba(0, 0, 200, 0.35), 
+                rgba(0, 50, 0, 0.35)
+            ),
+            url("./images/cover.jpg") center bottom;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          height: 500px;
+         }
+
+         .imgpp{
+          position: absolute;
+          bottom: 0;
+          right: 70px;
+         }
+         .overlay{
+          background: rgba(214,143,13,0.65);
+          position: absolute;
+          top:80px;
+          right: 15px;
+          width: 500px;
+          padding: 10px 50px;
+         }
 
     </style>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -89,29 +127,55 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><span class="header">achmad<label class="initial">syifa</label></span></a>
+            <a class="navbar-brand" href="#"><span class="header">itu<label class="initial">sajja</label></span></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><i class="ion-ios-home-outline" data-pack="default" data-tags="house"></i> home</a></li>
-              <li><a href="#"><i class="ion-ios-briefcase-outline" data-pack="default" data-tags="house"></i> work</a></li>
-              <li><a href="#"><i class="ion-earth" data-pack="default" data-tags="house"></i> blog</a></li>
-              <li><a href="#"><i class="ion-ios-email-outline" data-pack="default" data-tags="house"></i> contact</a></li>
+              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="ion-ios-home-outline" data-pack="default" data-tags="house"></i> home</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="ion-ios-briefcase-outline" data-pack="default" data-tags="house"></i> work</a></li>
+              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="ion-earth" data-pack="default" data-tags="house"></i> blog</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="ion-ios-email-outline" data-pack="default" data-tags="house"></i> contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
 
+
+<div class="row">
+<div class="col-md-12">
+  <div class="panel panel-default cover">
+    <div class="panel-body">
+      <div class="overlay">
+        <h1>Assalamualaykum,</h1>
+        <p>Thank`s for visiting this site !</p>
+      </div>
+      <img src="./images/pp.jpg" class="img img-circle img-thumbnail imgpp" width="150px" alt="PhotoThumb">
+    </div>
+  </div>
 </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-body">
+    </div>
+  </div>
+</div>
+<div class="col-md-8">
+  <div class="panel panel-default">
+    <div class="panel-body">
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="home">.asdasd..</div>
+      <div role="tabpanel" class="tab-pane fade" id="profile">..a.</div>
+      <div role="tabpanel" class="tab-pane fade" id="messages">.asd..</div>
+      <div role="tabpanel" class="tab-pane fade" id="settings">.sad..</div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
     <script type="text/javascript">
-        $('.nav li:first').addClass('active')
-        $('.nav li a').on('click',function()
-        {
-          $('.nav li').removeClass('active')
-          $(this).parent().addClass('active')
-        })
     </script>
 </body>
 </html>
