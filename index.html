@@ -15,6 +15,10 @@
             font-family: 'Nunito', sans-serif;
             line-height: 1.5;
             color:#fff;
+            padding-top: 100px;
+        }
+        p,h1 {
+          font-family: 'Alegreya Sans', sans-serif;
         }
         a:active, a:hover {
             outline: 0;
@@ -80,7 +84,7 @@
          .panel{
           border-radius: 0px;
           border:none;
-          background: #082157;
+          background: rgba(42,41,46,1);
          }
          .cover{
           background: 
@@ -99,16 +103,23 @@
 
          .imgpp{
           position: absolute;
-          bottom: 0;
+          bottom: 10%;
           right: 70px;
          }
          .overlay{
           background: rgba(214,143,13,0.65);
           position: absolute;
-          top:80px;
+          bottom:20%;
           right: 15px;
-          width: 500px;
+          width: 70%;
           padding: 10px 50px;
+         }
+         .welcome-quote{
+          font-style: italic;
+          padding-right: 150px;
+         }
+         .welcome-quote:after{
+          content:'\2014 \00A0';
          }
 
     </style>
@@ -118,7 +129,7 @@
 <body>
 
 <div class="container">
- <nav class="navbar navbar-transparent">
+ <nav class="navbar navbar-transparent navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -146,10 +157,10 @@
   <div class="panel panel-default cover">
     <div class="panel-body">
       <div class="overlay">
-        <h1>Assalamualaykum,</h1>
-        <p>Thank`s for visiting this site !</p>
+        <h1>"Sadarilah bahwa, dunia semakin menjauh dan akhirat semakin mendekat."</h1>
+        <p class="welcome-quote text-right">Achmad Syifa</p>
       </div>
-      <img src="./images/pp.jpg" class="img img-circle img-thumbnail imgpp" width="150px" alt="PhotoThumb">
+      <img src="./images/pp.jpg" class="img img-thumbnail imgpp" width="120px" alt="PhotoThumb">
     </div>
   </div>
 </div>
